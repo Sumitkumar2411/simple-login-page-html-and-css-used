@@ -1,0 +1,253 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Basic Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #333;
+}
+
+/* Main Login Container */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo Section */
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+}
+
+.logo .fa-user {
+    font-size: 40px;
+    color: #9b59b6;
+}
+
+/* Titles */
+.login-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-label .fa-solid {
+    margin-right: 8px;
+    color: #9b59b6;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #9b59b6;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.3);
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+/* Password Requirements */
+.password-requirements {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+    text-align: right;
+}
+
+/* Form Options: Remember Me & Forgot Password */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+    color: #555;
+}
+
+.forgot-password {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #9b59b6, #71b7e6);
+    transform: translateY(-2px);
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+    color: #aaa;
+    font-weight: 500;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+}
+
+.social-btn .fa-google {
+    color: #DB4437;
+}
+
+.social-btn .fa-facebook {
+    color: #4267B2;
+}
+
+/* Signup Link */
+.signup-link {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.signup-link a {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
